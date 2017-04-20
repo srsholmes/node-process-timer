@@ -1,6 +1,6 @@
 {
   "name": "node-process-timer",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "A utility to measure the execution time of functions",
   "main": "lib/index.js",
   "author": "Simon Holmes",
