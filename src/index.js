@@ -22,7 +22,7 @@ const averageTime = curry((fn, args, num) =>
   Array(num)
   .fill(0)
   .map((_, i) => i)
-  .reduce((acc, curr) => sum(acc, timer(fn, args)), 0) / num,
+  .reduce((acc, curr) => sum(acc, timer(fn, args)), 0) / num
 );
 
 export {
