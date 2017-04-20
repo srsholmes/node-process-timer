@@ -5,7 +5,7 @@
 
 ## Usage:
 ```
-const { averageTime, timer,secondsToNano, nanoToMilli, nanoToSec, milliToSec } = require('node-process-timer');
+const { averageTime, timer, nanoToMilli, nanoToSec, milliToSec } = require('node-process-timer');
 
 const sum = (x, y) => x + y;
 const time = timer(sum, [1,2]);
@@ -13,4 +13,8 @@ const avtTime = averageTime(sum, [1,2], 1000);
 
 console.log(time); // Time in nanoseconds.
 console.log(avtTime); // Average time in nanoseconds.
+
+nanoToSec(time); // Time in seconds
+const milli = nanoToMilli(time); // Time in milliseconds
+milliToSec(milli); // Time in seconds
 ```
