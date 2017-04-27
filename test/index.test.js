@@ -36,5 +36,5 @@ test('node-process-timer', () => {
   expect(time > average).toBe(true);
 
   timer(spy, ['hello']);
-  //t.deepEquals(spy.calledWith('hello'), true, 'should call the spy with the correct args')
+  expect(spy.calledWith('hello')).toBe(true);
 });
