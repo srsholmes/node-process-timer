@@ -9,7 +9,7 @@
     "watch": "babel --watch=./src --out-dir=./lib",
     "build": "babel src -d lib",
     "prepublish": "npm test && npm run build",
-    "test": "nyc node ./test/harness ./test | tap-diff",
+    "test": "jest",
     "coveralls": "nyc report --reporter=lcov && cat ./coverage/lcov.info | coveralls"
   },
   "devDependencies": {
@@ -20,6 +20,7 @@
     "babel-register": "^6.18.0",
     "coveralls": "^2.11.9",
     "glob": "^7.0.5",
+    "jest": "^19.0.2",
     "nyc": "^6.6.1",
     "sinon": "^2.1.0",
     "tap-diff": "^0.1.1",
