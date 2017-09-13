@@ -18,9 +18,9 @@ test('curry', () => {
 });
 
 test('node-process-timer --time utils', () => {
-  expect(secondsToNano(1000)).toBe(1e+12);
+  expect(secondsToNano(1000)).toBe(1000000000000);
   expect(nanoToMilli(1000)).toBe(0.001);
-  expect(nanoToSec(1000)).toBe(1e-6);
+  expect(nanoToSec(1000)).toBe(0.000001);
   expect(milliToSec(1000)).toBe(1);
   expect(sum(1, 2)).toBe(3);
 });
